@@ -1,0 +1,22 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2018/02/17/14/15/pattern-3160023_960_720.jpg");
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+img {
+    margin-top: 20px;
+    width: 18rem;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+}
+

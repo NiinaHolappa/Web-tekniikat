@@ -1,0 +1,27 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747777_960_720.jpg");
+}
+
+h1 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center
+}
+
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+img {
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40rem;
+}
