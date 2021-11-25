@@ -13,15 +13,54 @@ h3 {
     text-align: center;
 }
 
+h2 {
+    margin-top: 20px;
+}
+
 footer {
     font-weight: bold;
     text-align: center;
 }
 
 
-img {
+#kollaasi {
     margin-left: 25%;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 40rem;
+}
+
+img {
+    margin-top: 20px;
+    width: 18rem;
+}
+
+#color{
+    background-color: white;
+}
+
+.card {
+    margin-bottom: 30px;
+    margin-left: 0.5%;
+    display: inline-block;
+}
+
+.btn {
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+.pagination-button{
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+#joblinks{
+    margin-top: 50px;
+    margin-left: 1%;
+}
+
+.btn-group{
+    margin-left: 1%;
+    margin-top: 20px;
 }
