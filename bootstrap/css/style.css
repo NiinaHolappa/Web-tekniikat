@@ -2,6 +2,18 @@ body {
     background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747777_960_720.jpg");
 }
 
+.about-bg{
+    background-image: url("https://cdn.pixabay.com/photo/2016/09/05/15/07/concrete-1646788_960_720.jpg");
+}
+
+.art-bg{
+    background-image: url("https://cdn.pixabay.com/photo/2021/08/18/19/26/background-6556414_960_720.jpg");
+}
+
+.job-bg{
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747789_960_720.jpg");
+}
+
 h1 {
     margin: 20px;
     padding: 20px;
