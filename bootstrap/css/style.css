@@ -1,3 +1,5 @@
+/* All pages have different background image*/
+
 body {
     background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747777_960_720.jpg");
 }
@@ -13,6 +15,8 @@ body {
 .job-bg {
     background-image: url("https://cdn.pixabay.com/photo/2019/11/12/18/44/white-4621828_960_720.jpg");
 }
+
+/* Styles to all of the pages are here*/
 
 h1 {
     margin: 20px;
