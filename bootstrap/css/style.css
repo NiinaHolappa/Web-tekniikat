@@ -2,16 +2,16 @@ body {
     background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747777_960_720.jpg");
 }
 
-.about-bg{
+.about-bg {
     background-image: url("https://cdn.pixabay.com/photo/2016/09/05/15/07/concrete-1646788_960_720.jpg");
 }
 
-.art-bg{
+.art-bg {
     background-image: url("https://cdn.pixabay.com/photo/2021/08/18/19/26/background-6556414_960_720.jpg");
 }
 
-.job-bg{
-    background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747789_960_720.jpg");
+.job-bg {
+    background-image: url("https://cdn.pixabay.com/photo/2019/11/12/18/44/white-4621828_960_720.jpg");
 }
 
 h1 {
@@ -48,7 +48,7 @@ img {
 }
 
 #color{
-    background-color: white;
+    background-color: #ffff;
 }
 
 .card {
@@ -59,20 +59,11 @@ img {
 
 .btn {
     margin-left: 2%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.pagination-button{
-    margin-top: 30px;
-    list-style-type: none;
-}
-
-#joblinks{
+#joblinks {
     margin-top: 50px;
     margin-left: 1%;
 }
 
-.btn-group{
-    margin-left: 1%;
-    margin-top: 20px;
-}
