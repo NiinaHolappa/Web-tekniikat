@@ -11,12 +11,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="tietovisa.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <header style="text-align: center"><img src="images/onlinelearning.png" alt="" style="height: 200px" /></header>
+      <header style="text-align: center"><img src="../images/onlinelearning.png" alt="" style="height: 200px" /></header>
       <div>
         <ul class="nav nav-tabs navbar-expand-md navbar-light">
           <button
@@ -30,32 +31,32 @@
           >
             <i class="fas fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Päättelytehtävä</a>
+              <a class="nav-link" href="../index.html">Päättelytehtävä</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./quiz/englanti.html">Englanti-visa</a>
+              <a class="nav-link" href="./englanti.html">Englanti-visa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./quiz/historia.html">Historia-visa</a>
+              <a class="nav-link" href="./historia.html">Historia-visa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./quiz/maantieto.html">Maantieto-visa</a>
+              <a class="nav-link active" aria-current="page" href="./maantieto.html">Maantieto-visa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./quiz/matikka.html">Matikkatehtävä</a>
+              <a class="nav-link" href="./matikka.html">Matikkatehtävä</a>
             </li>
           </div>
         </ul>
       </div>
-      <div class="container border border-secondary mt-4" id="paattelytehtava">
+      <div class="container border border-primary mt-4" id="maantieto">
         <div class="mb-3 p-4">
           <label for="formGroupExampleInput" class="form-label">Osallistujan nimi</label>
           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Etunimi Sukunimi" />
         </div>
         <h3 class="text-center">Tietovisa</h3>
-        <p>
+        <p id="text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugit cumque odio, eaque et aperiam illo, magnam consequuntur necessitatibus corporis officiis ipsa iste sit. Voluptas,
           exercitationem laboriosam dolore velit modi quod at facere ullam nesciunt impedit nostrum, quis molestiae error eaque magni ipsam culpa, fuga blanditiis quaerat esse? Corrupti debitis,
           dolore exercitationem reiciendis sequi dolores? Facere sint distinctio cumque placeat repellendus voluptates, laboriosam officia rerum itaque nam cum praesentium incidunt, perferendis,
@@ -66,13 +67,13 @@
           placeat quam ipsum omnis soluta sapiente recusandae culpa iusto non! Inventore quis, ratione, minima sapiente eum voluptate esse ipsam laborum minus facere aperiam cum, error ab amet. Dicta
           labore sed corporis architecto?
         </p>
-        <button type="button" class="btn btn-secondary m-2">Seuraava</button>
+        <button type="button" class="btn btn-secondary m-2" id="seuraava" onclick="f1()">Seuraava</button>
         <i class="fas fa-arrow-right"></i>
       </div>
       <footer class="text-center">
         <hr />
         <p>&copy; ryhmä 9</p>
-        <a class="nav-link" href="./about/tietoja.html">Tietoja</a>
+        <a class="nav-link" href="../about/tietoja.html">Tietoja</a>
       </footer>
     </div>
 

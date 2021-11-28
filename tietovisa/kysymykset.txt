@@ -21,7 +21,7 @@ c. 150:ssa
 d. 365:ssä
 
 
-kysymys 4. Mikä on maailman pienin valtio?
+kysymys 4. Mikä maa on pinta-alaltaan maailman pienin valtio?
 a. Vatikaani
 b. Islanti
 c. Monaco
