@@ -7,6 +7,8 @@
 function quiz (questions, quizContainer, resultsContainer, submitButton) {
 
     function showQuestions(questions, quizContainer) {
+        let outPut = [];
+        let answer; 
 
     }
 
