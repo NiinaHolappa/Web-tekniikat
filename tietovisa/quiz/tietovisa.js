@@ -4,10 +4,27 @@
     
 }*/
 
+function quiz (questions, quizContainer, resultsContainer, submitButton) {
+
+    function showQuestions(questions, quizContainer) {
+
+    }
+
+    function showResults(questions, quizContainer, resultsContainer) {
+
+    }
+
+    showQuestions(questions, quizContainer);
+
+    submitButton.onclick = function() {
+        showResults (questions, quizContainer, resultsContainer);
+    }
+}
+
 const QUIZ_CONTAINER = document.getElementById("quiz");
 const SUBMIT_BUTTON = document.getElementById("submit");
 
-const QUESTIONS = [
+let allQuestions = [
     {
         question = "Kuinka monta maanosaa on?",
         answers: {
@@ -61,5 +78,5 @@ const QUESTIONS = [
             d: "Venäjä"
         },
         correctAnswer = "d"
-    },
-]
+    }
+];
