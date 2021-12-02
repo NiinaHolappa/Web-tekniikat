@@ -18,15 +18,10 @@ body {
 
 /* Styles to all of the pages are here*/
 
-h1 {
+h1, h3 {
     margin: 20px;
     padding: 20px;
     text-align: center
-}
-
-
-h3 {
-    text-align: center;
 }
 
 h2 {
