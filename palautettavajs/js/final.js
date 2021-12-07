@@ -30,3 +30,12 @@ hover.addEventListener("mouseover", function(event){
         event.target.style.color = "";
     }, 500);
 }, false);
+
+
+function changePicture() {
+    document.getElementById("image").src = "pony.jpg";
+}
+
+function changePicture2() {
+    document.getElementById("image").src = "footerimage.jpg";
+}

@@ -37,6 +37,16 @@ nav {
 
 ul {
     list-style-type: none;
+    padding: 20px;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 article {
