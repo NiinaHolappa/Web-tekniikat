@@ -31,11 +31,3 @@ hover.addEventListener("mouseover", function(event){
     }, 500);
 }, false);
 
-
-function changePicture() {
-    document.getElementById("image").src = "pony.jpg";
-}
-
-function changePicture2() {
-    document.getElementById("image").src = "footerimage.jpg";
-}
