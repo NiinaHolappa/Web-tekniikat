@@ -14,14 +14,12 @@
         <p>Oulun seudun issikkavaellukset</p>
     </header>
     <nav>
-        <ul id="hover">
-            <li><a href="../index.html">Etusivulle</a></li>
-            <li>Hevoset</li>
-            <li>Lukkari -21</li>
-            <li>Henkilökunta</li>
-            <li>Yhteystiedot</li>
-            <li>Turvallisuus</li>
-        </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="../index.html" id="hover">Etusivu</a>
+                </div>
+            </div>
     </nav>
     <article id="article">
         <div>
@@ -35,7 +33,7 @@
             <textarea name="" id="textArea"></textarea>
         </div>
         <div>
-            <button>Lähetä viesti</button>
+            <button id="send">Lähetä viesti</button>
         </div>
     </article>
     <footer id="image">

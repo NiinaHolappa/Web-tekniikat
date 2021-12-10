@@ -1,5 +1,5 @@
 // Haetaan elementti button ja lisätään sille kuuntelija.
-document.querySelector("button").addEventListener("click", message);
+document.getElementById("sendbutton").addEventListener("click", message);
 
 // Luodaan lista, johon tallenetaan halutut värit.  
 let colors = ["#96B896", "#F4F2FA", "#E8FFE8", "#FFE4CF", "#BAAA9E"];
@@ -30,4 +30,19 @@ hover.addEventListener("mouseover", function(event){
         event.target.style.color = "";
     }, 500);
 }, false);
+
+// HTTp request
+let xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET", "https://yesno.wtf/api/",true);
+// send request
+xmlhttp.send();
+
+// create event handler
+xmlhttp.onreadystatechange=function() {
+    if(xmlhttp.readyState === 4 && xmlhttp.status === 200) {   
+        let answerObject = JSON.parse(xmlhttp.response);
+        document.getElementById("answer").innerHTML = answerObject.answer;
+        document.getElementById("answer-image").setAttribute("src",answerObject.image);
+    }
+}
 

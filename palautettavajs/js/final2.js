@@ -1,5 +1,5 @@
 // Lisätään kuuntelija painikkeelle
-document.querySelector("button").addEventListener("click", addContent);
+document.getElementById("send").addEventListener("click", addContent);
 
 // Tallennetaan tiedot muuttujiin
 let body = document.querySelector("body");
@@ -16,3 +16,16 @@ function addContent() {
 
     article.append(h3, p);
 }
+
+// Luodaan muuttuja, jota käytetään seuraavassa kohdassa.
+let hover = document.getElementById("hover");
+
+// Lisätään muuttujalle kuuntelija ja luodaan funktio, jossa asetetaan mouseoverille väri.
+hover.addEventListener("mouseover", function(event){
+    event.target.style.color = "red"
+
+    // Palauttaa värin alkutilaan pienen viivästyksen jälkeen.
+    setTimeout(function(){
+        event.target.style.color = "";
+    }, 500);
+}, false);

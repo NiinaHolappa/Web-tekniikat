@@ -14,21 +14,25 @@
         <p>Oulun seudun issikkavaellukset</p>
     </header>
     <nav>
-        <ul id="hover">
-            <li><a href="pages/messages.html">Viestejä</a></li>
-            <li>Lukkari -21</li>
-            <li>Henkilökunta</li>
-            <li>Yhteystiedot</li>
-            <li>Turvallisuus</li>
-        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="pages/messages.html" id="hover">Viestejä</a>
+            </div>
+        </div>
     </nav>
     <article id="article">
+        <h2 id="question">Tykkäätkö hevosista?</h2>
+        <h3 id="answer"></h3>
+        <img id="answer-image">
+
+
         <p>Oulun seudun issikkavaellukset on nimensä mukaan issikkatalli Oulun pohjoispuolella Haukiputaalla. Järjestämme issikkavaelluksia ainoana tallina Oulussa. Meille hevosemme ovat perheenjäseniä ja kohtelemme niitä sen mukaisesti. Hevoset voivat hyvin ja ovat terveitä sekä saavat reilusti lajin mukaista aktiivisuutta.</p>
         <h3>Ota rohkeasti yhteyttä lähettämällä viesti!</h3>
         <p>Kirjoita viesti kenttään ja lähetä se painamalla nappia.</p>
 
         <input id="inputField" type="text">
-        <button>Lähetä</button>
+        <button id="sendbutton">Lähetä</button>
     </article>
     <footer>
         <img onmouseover="changePicture()" onmouseout="changePicture2()" id="image" src="footerimg.jpg" alt=""> 
