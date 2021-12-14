@@ -31,7 +31,10 @@ hover.addEventListener("mouseover", function(event){
     }, 500);
 }, false);
 
-// HTTp request
+ 
+
+//HTTp request
+/*
 let xmlhttp = new XMLHttpRequest();
 xmlhttp.open("GET", "https://yesno.wtf/api/",true);
 // send request
@@ -44,5 +47,35 @@ xmlhttp.onreadystatechange=function() {
         document.getElementById("answer").innerHTML = answerObject.answer;
         document.getElementById("answer-image").setAttribute("src",answerObject.image);
     }
-}
+}*/
+
+const app = {
+    fetchWeather: (ev) => {
+        let lat = "65.01236";
+        let lon = "25.46816";
+        let city = "643492";
+        let key = "142c39ff43985960d1f30e5a9632630d";
+        let lang = "fi";
+        let units = "metric";
+        let url = `http://api.openweathermap.org/data/2.5/onecall?appid=${key}&units=${units}&lang=${lang}&lat=${lat}&lon=${lon}`;
+        fetch(url)
+            .then(resp=>{
+                if(!resp.ok) throw new Error(resp.statusText);
+                return resp.json();
+            })
+            .then(data=>{
+                app.shoWeather(data);
+            })
+            .catch(console.err);
+    },
+    shoWeather: (resp) => {
+        console.log(resp);
+        document.getElementById("temp").innerHTML = "Tuntuu kuin: " + resp.current.temp + " °C";
+        document.getElementById("feels").innerHTML ="Lämpötila: " + resp.current.feels_like + " °C";
+    }
+}; 
+
+
+app.fetchWeather();
+
 
